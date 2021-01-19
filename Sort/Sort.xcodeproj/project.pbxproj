@@ -11,6 +11,7 @@
 		9A5AD75625B5E5D800FD41E3 /* Array+InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5AD75325B5E5D800FD41E3 /* Array+InsertionSort.swift */; };
 		9A5AD75725B5E5D800FD41E3 /* Array+BubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5AD75425B5E5D800FD41E3 /* Array+BubbleSort.swift */; };
 		9A5AD75825B5E5D800FD41E3 /* Array+SelectionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5AD75525B5E5D800FD41E3 /* Array+SelectionSort.swift */; };
+		BB127CA825B685B700F8ED4E /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB127CA725B685B700F8ED4E /* QuickSort.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,7 @@
 		9A5AD75325B5E5D800FD41E3 /* Array+InsertionSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+InsertionSort.swift"; sourceTree = "<group>"; };
 		9A5AD75425B5E5D800FD41E3 /* Array+BubbleSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+BubbleSort.swift"; sourceTree = "<group>"; };
 		9A5AD75525B5E5D800FD41E3 /* Array+SelectionSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+SelectionSort.swift"; sourceTree = "<group>"; };
+		BB127CA725B685B700F8ED4E /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				9A5AD75425B5E5D800FD41E3 /* Array+BubbleSort.swift */,
 				9A5AD75525B5E5D800FD41E3 /* Array+SelectionSort.swift */,
 				9A5AD75325B5E5D800FD41E3 /* Array+InsertionSort.swift */,
+				BB127CA725B685B700F8ED4E /* QuickSort.swift */,
 			);
 			path = Sort;
 			sourceTree = "<group>";
@@ -132,6 +135,7 @@
 				9A5AD75725B5E5D800FD41E3 /* Array+BubbleSort.swift in Sources */,
 				9A5AD74C25B5E5BE00FD41E3 /* main.swift in Sources */,
 				9A5AD75625B5E5D800FD41E3 /* Array+InsertionSort.swift in Sources */,
+				BB127CA825B685B700F8ED4E /* QuickSort.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
