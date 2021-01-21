@@ -41,3 +41,8 @@ var array4 = array
 currentTime = CFAbsoluteTimeGetCurrent()
 quickSortRandom(&array4, low: 0, high: array4.count - 1)
 print("  * 快速排序（较快）所花的毫秒数为：", (CFAbsoluteTimeGetCurrent() - currentTime) * 1000)
+
+var array5 = array
+currentTime = CFAbsoluteTimeGetCurrent()
+let sortedArray5 = mergeSort(array5)
+print("  * 归并排序所花的毫秒数为：", (CFAbsoluteTimeGetCurrent() - currentTime) * 1000)
