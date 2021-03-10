@@ -7,6 +7,8 @@
 
 import Foundation
 
+let userExtension = true
+
 let count = 1000
 var array = [Int]()
 for _ in 0..<count {
@@ -19,7 +21,11 @@ var currentTime: CFAbsoluteTime
 
 var array0 = array
 currentTime = CFAbsoluteTimeGetCurrent()
-array0.bubbleSort()
+if userExtension {
+  array0.bubbleSort(by: <)
+} else {
+  bubbleSort(nums: &array0)
+}
 print("  * 冒泡排序所花的毫秒数为：", (CFAbsoluteTimeGetCurrent() - currentTime) * 1000)
 
 var array1 = array
