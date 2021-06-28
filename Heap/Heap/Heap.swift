@@ -136,3 +136,19 @@ extension Heap {
         return nodes.removeLast()
     }
 }
+
+extension Heap {
+    public mutating func sort() -> [T] {
+        for i in 0...nodes.count - 1 {
+            nodes.swapAt(0, nodes.count - 1 - i)
+            shiftDown(from: 0, until: nodes.count - 1 - i)
+        }
+        return nodes
+    }
+    
+    public func heapSort(_ a: [T], _ sort: @escaping (T, T) -> Bool) -> [T] {
+        let reverseOrder = { i1, i2 in sort(i2, i1) }
+        var heap = Heap(array: a, sort: reverseOrder)
+        return heap.sort()
+    }
+}
