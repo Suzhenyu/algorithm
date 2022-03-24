@@ -11,18 +11,30 @@ extension Array where Element: Comparable {
     }
     
     public mutating func selectionSort(by areInIncreasingOrder: (Element, Element) -> Bool) {
-        guard self.count > 1 else { return }
-        
-        for i in 0..<(self.count - 1) {
-            var index = i
-            for j in (i + 1)...(self.count - 1) {
-                if areInIncreasingOrder(self[j], self[index]) {
-                    index = j
+        for i in 0..<self.count - 1 {
+            var min = i
+            for j in i + 1..<self.count {
+                if areInIncreasingOrder(self[j], self[min]) {
+                    min = j
                 }
             }
-            if index != i {
-                swapAt(i, index)
+            if min != i {
+                swapAt(i, min)
             }
+        }
+    }
+}
+
+public func selectionSort(_ nums: inout [Int]) {
+    for i in 0..<nums.count - 1 {
+        var min = i
+        for j in i + 1..<nums.count {
+            if nums[j] < nums[min] {
+                min = j
+            }
+        }
+        if min != i {
+            nums.swapAt(i, min)
         }
     }
 }

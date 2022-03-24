@@ -69,8 +69,8 @@
 			children = (
 				9A5AD74B25B5E5BE00FD41E3 /* main.swift */,
 				9A5AD75425B5E5D800FD41E3 /* Array+BubbleSort.swift */,
-				9A5AD75325B5E5D800FD41E3 /* Array+InsertionSort.swift */,
 				9A5AD75525B5E5D800FD41E3 /* Array+SelectionSort.swift */,
+				9A5AD75325B5E5D800FD41E3 /* Array+InsertionSort.swift */,
 				BB127CA725B685B700F8ED4E /* QuickSort.swift */,
 				BB127CAD25B6CA8E00F8ED4E /* MergeSort.swift */,
 			);

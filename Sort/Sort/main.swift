@@ -24,23 +24,27 @@ currentTime = CFAbsoluteTimeGetCurrent()
 if userExtension {
   array0.bubbleSort(by: <)
 } else {
-  bubbleSort(nums: &array0)
+  bubbleSort(&array0)
 }
 print("  * 冒泡排序所花的毫秒数为：", (CFAbsoluteTimeGetCurrent() - currentTime) * 1000)
+
+var array1 = array
+currentTime = CFAbsoluteTimeGetCurrent()
+if userExtension {
+    array1.selectionSort()
+} else {
+    selectionSort(&array1)
+}
+print("  * 选择排序所花的毫秒数为：", (CFAbsoluteTimeGetCurrent() - currentTime) * 1000)
 
 var array2 = array
 currentTime = CFAbsoluteTimeGetCurrent()
 if userExtension {
   array2.insertionSort()
 } else {
-  insertionSort(nums: &array2)
+  insertionSort(&array2)
 }
 print("  * 插入排序所花的毫秒数为：", (CFAbsoluteTimeGetCurrent() - currentTime) * 1000)
-
-var array1 = array
-currentTime = CFAbsoluteTimeGetCurrent()
-array1.selectionSort()
-print("  * 选择排序所花的毫秒数为：", (CFAbsoluteTimeGetCurrent() - currentTime) * 1000)
 
 var array3 = array
 currentTime = CFAbsoluteTimeGetCurrent()

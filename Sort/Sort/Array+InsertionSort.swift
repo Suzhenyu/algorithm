@@ -25,16 +25,16 @@ extension Array where Element: Comparable {
     }
 }
 
-public func insertionSort(nums: inout [Int]) {
-  guard nums.count > 1 else { return }
-  
-  for i in 1...nums.count - 1 {
-    let current = nums[i]
-    var preIndex = i - 1
-    while preIndex >= 0 && current < nums[preIndex] {
-      nums[preIndex + 1] = nums[preIndex]
-      preIndex -= 1
+public func insertionSort(_ nums: inout [Int]) {
+    guard nums.count > 1 else { return }
+    
+    for i in 1..<nums.count {
+        let current = nums[i]
+        var preIndex = i - 1
+        while preIndex >= 0 && nums[preIndex] > current {
+            nums[preIndex + 1] = nums[preIndex]
+            preIndex -= 1
+        }
+        nums[preIndex + 1] = current
     }
-    nums[preIndex + 1] = current
-  }
 }
