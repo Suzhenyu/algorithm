@@ -1,0 +1,1 @@
+在 Java 环境下执行 `java *.java` 即可
