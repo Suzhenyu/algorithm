@@ -9,7 +9,7 @@ import Foundation
 
 let userExtension = true
 
-let count = 6
+let count = 1000
 var array = [Int]()
 for _ in 0..<count {
     let random = Int(arc4random()) % (count * 10)
